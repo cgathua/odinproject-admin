@@ -2,7 +2,8 @@
     --primary-color: #ffffff;
     --secondary-color: #000000;
     --tertiary-color: #fca311;
-    --desktop-container: 86%;
+    --alternate-color: #e5e5e5;
+    --desktop-container: 95%;
     --mobile-container: 90%;
     --transition: all 0.3s linear;
 }
@@ -37,7 +38,6 @@ body {
 
 .container {
     margin: 0 auto;
-    /* width: var(--desktop-container); */
 }
 
 img {
@@ -62,6 +62,12 @@ h3,
 h4,
 p {
     color: var(--secondary-color);
+}
+
+
+section h1 {
+    text-align: left;
+    margin: 1rem 0 2rem;
 }
 
 /* end of general styling */
@@ -102,13 +108,15 @@ nav>ul {
 }
 
 aside {
-    padding: 1rem;
+    padding-left: 1.5rem;
     height: 100vh;
+    border-right: 1px solid var(--alternate-color);
 }
 
+/* end of aside */
 .main_article {
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .admin>figure>img {
@@ -123,12 +131,32 @@ aside {
     gap: 1rem;
 }
 
+.admin figure:nth-child(2) {
+    margin-right: 2rem;
+}
+
 .admin {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
-.admin {
-    background-color: var(--primary-color);
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="search"] {
+    background-color: var(--alternate-color);
+    padding: 5px 200px;
+    border-radius: 5px;
+}
+
+/* end of admin section */
+section[class="dashboard"] {
+    border-top: 1px solid var(--alternate-color);
 }
