@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --tertiary-color: #fca311;
+    --desktop-container: 86%;
+    --mobile-container: 90%;
+    --transition: all 0.3s linear;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    font-weight: normal;
+    min-height: 100vh;
+    line-height: 1.75;
+}
+
+.container {
+    margin: 0 auto;
+    /* width: var(--desktop-container); */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: var(--secondary-color);
+}
+
+/* end of general styling */
+main .container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 1rem;
+}
+
+nav>ul>li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+nav>ul {
+    margin-bottom: 2rem;
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-right: 6px solid var(--tertiary-color);
+}
+
+.active a {
+    color: var(--primary-color);
+
+}
+
+aside {
+    padding: 1rem;
+    height: 100vh;
+}
+
+.main_article {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.admin>figure>img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.admin>figure:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin {
+    background-color: var(--primary-color);
+}
