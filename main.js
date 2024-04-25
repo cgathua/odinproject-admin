@@ -13,7 +13,7 @@ let newChart = new Chart(ctx, {
         }, {
             label: 'Cancelled Appointments',
             backgroundColor: ['#fca311', '#fca311', '#fca311', '#fca311', '#fca311', '#fca311'],
-            data: [25, 35, 50, 10, 40, 120, 20],
+            data: [25, 35, 50, 40, 40, 20, 20],
             borderWidth: 1
         }]
     },

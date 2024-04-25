@@ -10,6 +10,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -208,3 +209,21 @@ dt {
 }
 
 /* end of chart */
+#table {
+    overflow-x: auto;
+}
+
+table {
+    display: grid;
+    place-items: center;
+}
+
+th {
+    padding: 0 1rem;
+}
+
+td {
+    text-align: center;
+}
+
+/* end of table */
