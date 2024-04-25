@@ -38,7 +38,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: var(--desktop-container);
+    /* width: var(--desktop-container); */
 }
 
 img {
@@ -109,7 +109,7 @@ nav>ul {
 }
 
 aside {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     height: 100vh;
     border-right: 1px solid var(--alternate-color);
 }
@@ -177,7 +177,6 @@ article[class="illustration"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
 }
 
 
@@ -201,3 +200,11 @@ dt {
 }
 
 /* end of illustration articles */
+.Chart {
+    position: relative;
+    margin: 4rem auto;
+    height: 50vh;
+    width: 50vw;
+}
+
+/* end of chart */
